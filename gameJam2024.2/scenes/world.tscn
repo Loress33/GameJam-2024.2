@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfg4k2gqv67mr"]
+
+[ext_resource type="Texture2D" uid="uid://2ijcyagwct5c" path="res://art/sprites/BG_placeholder.png" id="1_20vje"]
+[ext_resource type="PackedScene" uid="uid://beiqyxyvl0y5b" path="res://scenes/chao.tscn" id="2_lbsp1"]
+
+[node name="World" type="Node2D"]
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.453125, 0.45)
+texture = ExtResource("1_20vje")
+
+[node name="Chao" parent="." instance=ExtResource("2_lbsp1")]
+position = Vector2(536, 568)
