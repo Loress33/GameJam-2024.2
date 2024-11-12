@@ -2,24 +2,77 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+var current_dir = "none"
+var direcao = null
+
+func _ready() -> void:
+    $AnimatedSprite2D.play("idle_down")
 
 
 func _physics_process(delta: float) -> void:
-    # Add the gravity.
-    if not is_on_floor():
-        velocity += get_gravity() * delta
+    if Global.player_anda:
+        player_movement(delta)
 
-    # Handle jump.
-    if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-        velocity.y = JUMP_VELOCITY
-
-    # Get the input direction and handle the movement/deceleration.
-    # As good practice, you should replace UI actions with custom gameplay actions.
-    var direction := Input.get_axis("ui_left", "ui_right")
-    if direction:
-        velocity.x = direction * SPEED
+func player_movement(delta):
+    if Input.is_action_pressed("ui_right"):
+        current_dir = "right"
+        direcao = Vector2(1, 0)
+        player_anim(1)
+        velocity.x = SPEED
+        velocity.y = 0
+    
+    elif Input.is_action_pressed("ui_left"):
+        current_dir = "left"
+        direcao = Vector2(-1, 0)
+        player_anim(1)
+        velocity.x = -SPEED
+        velocity.y = 0
+    
+    elif Input.is_action_pressed("ui_up"):
+        current_dir = "up"
+        direcao = Vector2(0, -1)
+        player_anim(1)
+        velocity.x = 0
+        velocity.y = -SPEED
+    
+    elif Input.is_action_pressed("ui_down"):
+        current_dir = "down"
+        direcao = Vector2(0, 1)
+        player_anim(1)
+        velocity.x = 0
+        velocity.y = SPEED
+    
     else:
-        velocity.x = move_toward(velocity.x, 0, SPEED)
-
+        player_anim(0)
+        velocity.x = 0
+        velocity.y = 0
+    
     move_and_slide()
+    
+func player_anim(mov_constant):
+    var dir = current_dir
+    var anim = $AnimatedSprite2D
+    
+    if dir == "right":
+        if mov_constant == 1:
+            anim.play("right_walk")
+        else:
+            anim.play("right_idle")
+    
+    elif dir == "left":
+        if mov_constant == 1:
+            anim.play("left_walk")
+        else:
+            anim.play("left_idle")
+    
+    elif dir == "up":
+        if mov_constant == 1:
+            anim.play("up_walk")
+        else:
+            anim.play("up_idle")
+    
+    elif dir == "down":
+        if mov_constant == 1:
+            anim.play("down_walk")
+        else:
+            anim.play("idle")
