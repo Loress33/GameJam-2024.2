@@ -75,4 +75,4 @@ func player_anim(mov_constant):
         if mov_constant == 1:
             anim.play("down_walk")
         else:
-            anim.play("idle")
+            anim.play("down_idle")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgd2maxn5e08c"]
+
+[ext_resource type="Texture2D" uid="uid://dhsuv33b4820q" path="res://art/sprites/galo.png" id="1_r1udf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuy2f"]
+size = Vector2(344, 744)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.3, 0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r1udf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12, 28)
+shape = SubResource("RectangleShape2D_yuy2f")
