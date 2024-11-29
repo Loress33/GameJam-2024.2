@@ -12,5 +12,3 @@ func _ready() -> void:
 func _process(delta: float) -> void:
     if Dialogic.timeline_ended:
         Global.player_anda = true
-    
-    

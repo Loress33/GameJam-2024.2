@@ -1,21 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfg4k2gqv67mr"]
 
-[ext_resource type="Texture2D" uid="uid://2ijcyagwct5c" path="res://art/sprites/BG_placeholder.png" id="1_20vje"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_lqial"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="2_8v60l"]
+[ext_resource type="Texture2D" uid="uid://8xiara7u4ght" path="res://art/sprites/BG_placeholderjpg.jpg" id="2_gtiyh"]
 [ext_resource type="PackedScene" uid="uid://bgd2maxn5e08c" path="res://scenes/amigo.tscn" id="3_vo4k2"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_lqial")
 
-[node name="Fundo" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(0.453125, 0.45)
-texture = ExtResource("1_20vje")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(962.5, 540.5)
+scale = Vector2(7.02182, 5.98361)
+texture = ExtResource("2_gtiyh")
 
 [node name="Amigo" parent="." instance=ExtResource("3_vo4k2")]
-position = Vector2(708, 416)
+position = Vector2(1248, 496)
 
 [node name="player" parent="." instance=ExtResource("2_8v60l")]
-position = Vector2(392, 528)
-scale = Vector2(0.6, 0.6)
+position = Vector2(560, 568)
