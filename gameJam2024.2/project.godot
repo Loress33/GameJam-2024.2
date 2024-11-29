@@ -22,8 +22,15 @@ Global="*res://scripts/global.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"Amigo": "res://dialogues/Amigo.dch",
+"Cuca": "res://dialogues/Cuca.dch",
+"Pai": "res://dialogues/Pai.dch",
+"Protagonista": "res://dialogues/Protagonista.dch"
+}
+directories/dtl_directory={
+"inicio": "res://dialogues/inicio.dtl"
+}
 glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style="Default"
