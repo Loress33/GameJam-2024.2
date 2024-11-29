@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-
 const SPEED = 300.0
 var current_dir = "none"
 var direcao = null
+var inventario = []
 
 func _ready() -> void:
     $AnimatedSprite2D.play("down_idle")

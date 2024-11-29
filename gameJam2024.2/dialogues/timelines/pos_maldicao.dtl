@@ -65,57 +65,14 @@ label lembranca
 
 label menina
 	
-	# Sim! Acho que agora eu me lembro!
-	NPC: E’e! A’ekue xekuaa!
+	# Eu não vi quem levou a menina...
+	NPC: Ndaikuaa mba’e re oguereko pe mitã...
 	
-	Amigo: Ele disse que lembra quem levou a Isabella.
-	Protagonista: Pergunta quem foi!
-	Amigo: Calma, cara!
-	# Continue, por favor.
-	Amigo: Eikove, porã porã.
-	
-	# Foi o protetor da floresta!
-	NPC: Ha’e oúva yvyrupa!
-	
-	Amigo: Ele disse que foi o protetor da floresta.
-	Protagonista: Duvido que ele esteja falando do Ibama.
-	
-	# Aquele que vai de retro, e cuja cabeça queima como o Sol!
-	NPC: Uru oĩva apyte, oikuaa guasu ita'ã pe, ojapo yvyrã.
-	
-	# Levou ela para a toca do Boitatá, ao Leste da aldeia
-	NPC: Oguereko hína oikohára mba'e tatá, umi yvyrupa kuarahy rei.
-	
-	Amigo: Eita porra...
-	Protagonista: O que foi?
-	Amigo: Boas e más notícias
-	Amigo: Qual você quer primeiro?
-	Protagonista: Desembucha Jefferson!
-	Amigo: Qual você quer?
-	- A boa
-		jump boa
-	- A má
-		jump ma
-
-
-label boa
-	Protagonista: Qual a boa?
-	Amigo: Sabemos onde ir.
-	Protagonista: E qual a má?
-	Amigo: Ela tá numa toca ao Leste da aldeia.
-	Protagonista: E daí?
-	Amigo: É a toca do Boitatá.
-	Protagonista: Puta que pariu.
-	Amigo: Exatamente.
-	[end_timeline]
-
-label ma
-	Protagonista: Manda a má logo.
-	Amigo: Ela tá numa toca ao leste da vila.
-	Protagonista: Só isso?
-	Amigo: A toca é do Boitatá
-	Protagonista: Puta que pariu.
-	Amigo: Exatamente.
-	Protagonista: E a boa?
-	Amigo: A gente já sabe pra onde ir.
+	Amigo: Ele disse que não sabe quem foi.
+	Protagonista: Droga!
+	# Mas talvez o cacique saiba
+	NPC: Ha’eve, piko pe tapera ojeha’o.
+	Amigo: Mas talvez dê pra gente falar com o cacique.
+	Protagonista: Beleza! Muito obrigado!
+	NPC: Nderehe
 	[end_timeline]
