@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1l7w2b6wdmde"
+path="res://.godot/imported/Rotary phone ringtone Sound effects [TubeRipper.com].mp3-9f498e4591de45afee520391e68fd64e.mp3str"
+
+[deps]
+
+source_file="res://art/sounds/Rotary phone ringtone Sound effects [TubeRipper.com].mp3"
+dest_files=["res://.godot/imported/Rotary phone ringtone Sound effects [TubeRipper.com].mp3-9f498e4591de45afee520391e68fd64e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
