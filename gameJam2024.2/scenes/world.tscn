@@ -18,3 +18,4 @@ position = Vector2(1248, 496)
 
 [node name="player" parent="." instance=ExtResource("2_8v60l")]
 position = Vector2(560, 568)
+scale = Vector2(0.5, 0.5)
