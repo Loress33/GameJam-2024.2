@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqyeoow5lae8y"]
+
+[ext_resource type="Script" path="res://scripts/oca_1.gd" id="1_838dt"]
+[ext_resource type="Texture2D" uid="uid://d0ad6pd7ss7wb" path="res://art/sprites/oca1.png" id="1_ujih3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_847e2"]
+size = Vector2(632, 488)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdkqo"]
+size = Vector2(154, 106)
+
+[node name="Oca" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_838dt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ujih3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 4)
+shape = SubResource("RectangleShape2D_847e2")
+
+[node name="porta" type="CollisionShape2D" parent="."]
+position = Vector2(0, 192)
+shape = SubResource("RectangleShape2D_rdkqo")
+debug_color = Color(0.934177, 0.196034, 0.425255, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -9,11 +9,11 @@
 "style": ""
 },
 "default_portrait": "",
-"description": "NPCs genéricos e menos importantes.",
-"display_name": "NPC",
+"description": "Termo genérico para os habitantes da vila",
+"display_name": "Nativo",
 "mirror": false,
-"nicknames": ["Nativo"],
+"nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {},
-"scale": 0.1
+"scale": 1.0
 }

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ce7dgeftq7nip"]
+[gd_scene load_steps=17 format=3 uid="uid://ce7dgeftq7nip"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_m0p50"]
 [ext_resource type="Texture2D" uid="uid://dglb70177qoen" path="res://art/sprites/Protagonista/protagonista_frente.png" id="2_caek7"]
@@ -93,12 +93,27 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_teas1"]
+radius = 120.0
+height = 592.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2ek"]
+size = Vector2(328, 632)
+
 [node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_m0p50")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_60dd4")
-animation = &"down_walk"
-frame_progress = 0.418549
+animation = &"right_walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_teas1")
+
+[node name="Interagir" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interagir"]
+position = Vector2(-4, 4)
+shape = SubResource("RectangleShape2D_2k2ek")
+debug_color = Color(0.974022, 0, 0.429797, 0.42)
