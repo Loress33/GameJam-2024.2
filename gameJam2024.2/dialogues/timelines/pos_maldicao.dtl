@@ -1,0 +1,78 @@
+# A tradução da fala do NPC está em cima da fala.
+
+# O que aconteceu?
+NPC: Mba’é re oiko?
+
+# É como se um peso sumisse dos meus ombros do nada.  
+NPC: Oporã’ỹrõ peteĩ pa'ũ okanhym minha atã rupi.
+
+Protagonista: Como é?
+Amigo: Resumindo, a maldição sumiu.
+Protagonista: Ótimo!
+
+# Não sei o que vocês fizeram,
+NPC: Xee ndokuaa mba’é peẽ pejapo.
+
+# Mas nós somos eternamente gratos pela sua ajuda.
+NPC: Avy’a e’ỹ aỹgüera oré roikovy remi’uara.
+
+Amigo: Ele disse que agradece muito pela nossa ajuda.
+
+
+label Escolhas
+- Qual a última coisa que você lembra?
+	jump lembranca
+
+- Se sente melhor agora?
+	jump melhor
+
+- Consegue lembrar da garota agora?
+	jump menina
+
+label melhor
+	# Acho que sim
+	NPC: Xee a’ekue e’ỹ.
+
+	# Só um pouo enjoado
+	NPC: Abae’i anhembuká.
+
+	# Como se tivesse corrido de uma onça por 2 dias sem parar
+	NPC: Oporã’ỹrõ xeikó ramõ peteĩ jaguareté gui mokoĩ ara’i re ndopyta’ỹ.
+
+	Amigo: Ele disse que tá bem.
+	Amigo: Só meio enjoado
+	Amigo: E alguma piada sobre correr de uma onça sem parar.
+	Protagonista: Ok...
+	jump Escolhas
+
+label lembranca
+
+	# Eu só lembro de me sentir... diferente.
+	NPC: Xee nderékatu xekuaa xe mba’e... e’ỹ.
+
+	# Como se não quisesse conversar com ninguém nunca mais
+	NPC: Oporã’ỹrõ xee ndaipóri mba’eve mba’e apytegui.
+
+	# E como se ajudar fosse o pior dos pecados possíveis
+	NPC: Oporã’ỹrõ ojejapo pehẽ ojapo porã petei tory.
+
+	Amigo: Ele se sentiu estranho.
+	Amigo: Como se nunca mais quisesse ajudar ou conversar com ninguém.
+	Protagonista: Ou seja, ele virou paulista?
+	Amigo: Basicamente.
+
+	jump Escolhas
+
+label menina
+	
+	# Eu não vi quem levou a menina...
+	NPC: Ndaikuaa mba’e re oguereko pe mitã...
+	
+	Amigo: Ele disse que não sabe quem foi.
+	Protagonista: Droga!
+	# Mas talvez o cacique saiba
+	NPC: Ha’eve, piko pe tapera ojeha’o.
+	Amigo: Mas talvez dê pra gente falar com o cacique.
+	Protagonista: Beleza! Muito obrigado!
+	NPC: Nderehe
+	[end_timeline]
