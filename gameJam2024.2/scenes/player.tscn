@@ -98,7 +98,7 @@ radius = 120.0
 height = 592.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2ek"]
-size = Vector2(328, 632)
+size = Vector2(328, 648)
 
 [node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_m0p50")
@@ -114,6 +114,6 @@ shape = SubResource("CapsuleShape2D_teas1")
 [node name="Interagir" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interagir"]
-position = Vector2(-4, 4)
+position = Vector2(-4, -4)
 shape = SubResource("RectangleShape2D_2k2ek")
 debug_color = Color(0.974022, 0, 0.429797, 0.42)

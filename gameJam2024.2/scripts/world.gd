@@ -5,7 +5,7 @@ extends Node2D
 func _ready() -> void:
     
     Global.player_anda = false
-    Dialogic.start("Inicio")
+    #Dialogic.start("Inicio")
     
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
