@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://swrf06lbgfe4"]
+
+[ext_resource type="Texture2D" uid="uid://onulnp1nnc4o" path="res://art/sprites/Oca place_holder.webp" id="1_6hj6j"]
+[ext_resource type="PackedScene" path="res://Scenes/NPC_peruca.tscn" id="2_55ibr"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_s7c1j"]
+[ext_resource type="PackedScene" path="res://Scenes/Portal.tscn" id="4_ujgr0"]
+
+[node name="Oca1" type="Node2D"]
+
+[node name="Dall·e2024-11-3016_34_19-ACozyTop-downPixelArtRepresentationOfACircularHutInterior,StyledLikeAnOld-schoolRetroVideoGame_TheHutHasClayWalls,ACentralWoo" type="Sprite2D" parent="."]
+position = Vector2(1044.5, 506)
+scale = Vector2(2.25488, 1.27539)
+texture = ExtResource("1_6hj6j")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_55ibr")]
+position = Vector2(691, 328)
+script = null
+
+[node name="player" parent="." instance=ExtResource("3_s7c1j")]
+position = Vector2(1021, 809)
+
+[node name="Saida" parent="." instance=ExtResource("4_ujgr0")]
+position = Vector2(1026, 972)

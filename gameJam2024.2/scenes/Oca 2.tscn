@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0fotgheb67a3"]
+
+[ext_resource type="Script" path="res://scripts/Saida.gd" id="1_rqwvy"]
+[ext_resource type="Texture2D" uid="uid://onulnp1nnc4o" path="res://art/sprites/Oca place_holder.webp" id="2_sl8ip"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_p5ina"]
+[ext_resource type="PackedScene" path="res://Scenes/Portal.tscn" id="4_2oskq"]
+
+[node name="Oca2" type="Node2D"]
+script = ExtResource("1_rqwvy")
+
+[node name="Dall·e2024-11-3016_34_19-ACozyTop-downPixelArtRepresentationOfACircularHutInterior,StyledLikeAnOld-schoolRetroVideoGame_TheHutHasClayWalls,ACentralWoo" type="Sprite2D" parent="."]
+position = Vector2(974.5, 509.5)
+scale = Vector2(2.31738, 1.28809)
+texture = ExtResource("2_sl8ip")
+
+[node name="player" parent="." instance=ExtResource("3_p5ina")]
+position = Vector2(994, 799)
+
+[node name="Saida" parent="." instance=ExtResource("4_2oskq")]
+position = Vector2(957, 978)
