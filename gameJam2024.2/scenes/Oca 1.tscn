@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bvi364f3i7342"]
 
-[ext_resource type="Texture2D" uid="uid://onulnp1nnc4o" path="res://art/sprites/Oca placeholder.webp" id="2_2uk0e"]
+[ext_resource type="Texture2D" uid="uid://onulnp1nnc4o" path="res://art/sprites/Oca place_holder.webp" id="2_2uk0e"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_26mxr"]
 [ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://scenes/Portal.tscn" id="3_g4cjd"]
 [ext_resource type="PackedScene" uid="uid://6svm2gayt0u2" path="res://scenes/NPC_peruca.tscn" id="4_c3y35"]
